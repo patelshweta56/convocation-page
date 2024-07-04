@@ -11,11 +11,9 @@
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <!-- script file -->
-     <script src="script.js"></script>
     <title>Convocation Page Of IIITT</title>
 </head>
-<body oncontextmenu="return false" class="light-mode">
+<body class="light-mode">
 <!-- navbar section starts -->
 <div class="conatiner">
     <div>    
@@ -27,16 +25,24 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#Event">Event</a></li>
-                        <li><a href="#Gallary">Gallary</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <li><div class="theme-toggle">
+                          <input type="checkbox" id="theme-toggle-checkbox">
+                          <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                            <span class="toggle-button"></span>
+                          </label>
+                        </div></li>
+
                     </ul>
+                    
                 </nav>
         </header>
     </div>
 <!-- navbar section ends -->
 
 <!--- home section starts -->
-
+<div id="container">
 <div style="border: 30px 30px 0 30px solid #ccc; padding: 20px; overflow: auto;">
 
     <section class="home" id="home">
@@ -128,8 +134,9 @@
 <!-- Gallary section starts -->
 
 <!-- Gallery section -->
+ <section class="gallery" id="gallery">
+    <h2>Gallery</h2>
 <div class="gallery">
-  <h2>Gallary</h2>
   <h2>Convocation Moments</h2>
   <div class="row">
     <div class="col-md-4">
@@ -180,6 +187,7 @@
     <!-- Add more images here -->
   </div>
 </div>
+</section>
 
 <!-- gallary section ends -->
 <!-- contact section starts -->
@@ -219,7 +227,7 @@
               </div>
               </section>
             <hr/>
-
+            </div>
 <!-- contact section ends -->
 
 <!-- footer section starts -->
@@ -263,6 +271,7 @@
     </div>
   </footer>
 
-   
+   <!-- script file -->
+   <script src="script.js"></script>
 </body>
 </html>
